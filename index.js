@@ -33,4 +33,4 @@ app.post('/',(req,res)=>{
   
 })
 
-app.listen(env.PORT,()=>{console.log("Running")})
+app.listen(process.env.PORT,()=>{console.log("Running")})
