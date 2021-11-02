@@ -33,4 +33,7 @@ app.post('/',(req,res)=>{
   
 })
 
-app.listen(process.env.PORT,()=>{console.log("Running")})
+app.get('/login',(req,res)=>{
+    res.render('login')
+})
+app.listen(process.env.PORT||3000,()=>{console.log("Running")})
